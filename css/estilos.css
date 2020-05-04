@@ -127,7 +127,7 @@ ul li a{
     cursor: pointer;
     transition: 750ms all;
     transform-origin: center left;
- 
+ position: relative;
 
 }
 .carrusel__item:hover ~ .carrusel__item{
@@ -141,4 +141,30 @@ ul li a{
     transform: scale(1.5);
     opacity: 1;
    
+}
+.carrusel__item:hover .carrusel__item-detalles{
+    opacity: 1;
+}
+.carrusel__item-img{
+    width: 100%;
+}
+.carrusel__item-detalles{
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+    font-size: 12px;
+    opacity: 0;
+    transition: 750ms all;
+    position: absolute;
+    padding-left: 10px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding-bottom: 8px;
+}
+.carrusel__item-icon{
+   width: 30px;
+   height: 30px;
+}
+.carrusel__item-detalles-titulo{
+    color: white;
+    
 }
